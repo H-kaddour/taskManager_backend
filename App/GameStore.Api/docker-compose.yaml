@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  database:
+    image: postgres:12
+
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_USER=hicham
+      - POSTGRES_PASSWORD=1234
+    ports:
+      - "5432:5432"
+    networks:
+      - hidden
+
+networks:
+  hidden:
+    name: hidden
+    driver: bridge
