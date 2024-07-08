@@ -11,6 +11,8 @@ using System.Text;
 
 using Microsoft.AspNetCore.Mvc;
 
+using TaskManager.Api.Endpoints;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var connString = builder.Configuration.GetConnectionString("DbConnection");
@@ -119,5 +121,6 @@ app.MapGet("/protected", [Microsoft.AspNetCore.Authorization.Authorize] () => {
     return Results.Ok("This is a protected endpoint. Only authenticated users can access this.");
 });
 
+app.MapTasksEndpoints();
 
 app.Run();

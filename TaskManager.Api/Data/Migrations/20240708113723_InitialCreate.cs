@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace TaskManager.Api.Migrations
+namespace TaskManager.Api.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class NewTables : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

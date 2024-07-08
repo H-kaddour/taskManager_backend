@@ -8,11 +8,11 @@ using TaskManager.Api.Data;
 
 #nullable disable
 
-namespace TaskManager.Api.Migrations
+namespace TaskManager.Api.Data.Migrations
 {
     [DbContext(typeof(DbStoreContext))]
-    [Migration("20240702200735_NewTables")]
-    partial class NewTables
+    [Migration("20240708113723_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

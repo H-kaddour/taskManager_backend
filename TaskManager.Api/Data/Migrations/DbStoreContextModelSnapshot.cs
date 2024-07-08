@@ -7,7 +7,7 @@ using TaskManager.Api.Data;
 
 #nullable disable
 
-namespace TaskManager.Api.Migrations
+namespace TaskManager.Api.Data.Migrations
 {
     [DbContext(typeof(DbStoreContext))]
     partial class DbStoreContextModelSnapshot : ModelSnapshot
